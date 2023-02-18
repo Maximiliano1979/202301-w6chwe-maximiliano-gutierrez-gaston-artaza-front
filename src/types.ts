@@ -1,4 +1,5 @@
 export interface RobotStructure {
+  id: string;
   name: string;
   image: string;
   speed: number;
@@ -6,3 +7,7 @@ export interface RobotStructure {
 }
 
 export type RobotsStructure = RobotStructure[];
+
+export interface RobotApiResponse {
+  robots: RobotsStructure;
+}
