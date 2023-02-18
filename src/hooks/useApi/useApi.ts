@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useAppDispatch } from "../../app/hooks";
 import { loadRobotsActionCreator } from "../../store/features/robots/robotsSlice";
-import { RobotApiResponse } from "../../types";
+import { RobotApiResponse } from "../../types.js";
 
 const useApi = () => {
   const dispatch = useAppDispatch();
