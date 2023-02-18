@@ -1,6 +1,11 @@
-import React from "react";
+import Robots from "./components/Robots/Robots";
 
 const App = (): JSX.Element => {
-  return <></>;
+  return (
+    <>
+      <Robots />
+    </>
+  );
 };
+
 export default App;
