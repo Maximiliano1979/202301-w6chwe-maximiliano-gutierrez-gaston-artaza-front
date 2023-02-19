@@ -6,14 +6,17 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { RobotStructure } from "../../types";
 import RobotCardStyles from "./RobotCardStyles";
+import useApi from "../../hooks/useApi/useApi";
 
 export interface RobotProps {
   robot: RobotStructure;
 }
 
 const RobotCard = ({
-  robot: { name, image, endurance, speed },
+  robot: { name, image, endurance, speed, id },
 }: RobotProps): JSX.Element => {
+  const { deleteRobot } = useApi();
+
   return (
     <RobotCardStyles>
       <Card sx={{ maxWidth: 345 }}>
@@ -49,7 +52,9 @@ const RobotCard = ({
         </CardContent>
         <CardActions className="button-container">
           <Button size="large">Show more</Button>
-          <Button size="large">Delete</Button>
+          <Button size="large" onClick={() => deleteRobot(id)}>
+            Delete
+          </Button>
         </CardActions>
       </Card>
     </RobotCardStyles>
