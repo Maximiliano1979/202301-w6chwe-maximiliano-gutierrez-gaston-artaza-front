@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "@fontsource/roboto-mono";
 
 const RobotsStyled = styled.ul`
   padding: 3rem;
@@ -18,11 +17,6 @@ const RobotsStyled = styled.ul`
     border: solid 1px;
     border-color: #a29c9c;
     color: black;
-  }
-
-  h1 {
-    text-align: center;
-    font-family: "Roboto Mono", sans-serif;
   }
 `;
 
