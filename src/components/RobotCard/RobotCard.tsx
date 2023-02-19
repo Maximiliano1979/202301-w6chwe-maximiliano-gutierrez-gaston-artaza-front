@@ -19,7 +19,7 @@ const RobotCard = ({
 
   return (
     <RobotCardStyles>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card className="card" sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           height="340"
@@ -31,7 +31,7 @@ const RobotCard = ({
             gutterBottom
             variant="h5"
             component="div"
-            className="typography-title"
+            className="typography"
           >
             Name: {name}
           </Typography>
@@ -51,7 +51,6 @@ const RobotCard = ({
           </Typography>
         </CardContent>
         <CardActions className="button-container">
-          <Button size="large">Show more</Button>
           <Button size="large" onClick={() => deleteRobot(id)}>
             Delete
           </Button>

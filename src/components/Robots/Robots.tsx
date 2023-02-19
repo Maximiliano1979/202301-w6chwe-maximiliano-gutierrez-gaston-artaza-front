@@ -18,8 +18,8 @@ const Robots = (): JSX.Element => {
     return <h1>Loading...</h1>;
   }
   return (
-    <>
-      <h1> List of Robotinhos </h1>
+    <div>
+      <h1 className="header"> List of Robotinhos </h1>
       <RobotsStyled>
         {robots.map((robot) => (
           <li key={robot.id}>
@@ -27,7 +27,7 @@ const Robots = (): JSX.Element => {
           </li>
         ))}
       </RobotsStyled>
-    </>
+    </div>
   );
 };
 
