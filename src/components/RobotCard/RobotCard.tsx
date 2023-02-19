@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { RobotStructure } from "../../types";
 import RobotCardStyles from "./RobotCardStyles";
 
-interface RobotProps {
+export interface RobotProps {
   robot: RobotStructure;
 }
 
@@ -44,7 +44,7 @@ const RobotCard = ({
             color="text.secondary"
             className="typography"
           >
-            Spedd: {speed}
+            Speed: {speed}
           </Typography>
         </CardContent>
         <CardActions className="button-container">
