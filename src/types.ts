@@ -9,5 +9,5 @@ export interface RobotStructure {
 export type RobotsStructure = RobotStructure[];
 
 export interface RobotApiResponse {
-  robots: RobotsStructure;
+  robot: RobotsStructure;
 }
